@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>W3C-SVG</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="logo.png">
+      </div>
+    </header>
+    <div class="wrapper">
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Please enter the following information</h2>
+        </div>
+        <div class="card-body">
+        <form>
+          <div class="form-group row" id="info">
+            <label class="col-sm-2 col-form-label">ssn (last 4) xxx-xx-</label>
+              <input type="text" class="form-control-plaintext" id="last4" placeholder="xxxx">
+          </div>
+          <div class="form-group row" id="DOB">
+            <label for="inputPassword" class="col-sm-2 col-form-label">date of birth</label>
+              <input type="date" class="form-control" id="inputDate">
+         
+          </div>
+        </form>
+        </div>
+        <div class="card-footer">
+          <button id="submitBtn" class="btn" onclick="submitForm()" disabled>SUBMIT</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

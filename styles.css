@@ -1,0 +1,160 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+header {
+  text-align: center;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(196, 195, 195, 0.3);
+}
+
+label {
+  color: rgb(184, 184, 184);
+  width: 12em;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  float: left;
+  text-align: right;
+}
+
+.wrapper {
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: rgb(54, 90, 154);
+}
+
+/* #last4,
+#inputDate {
+  color: rgb(184, 184, 184);
+} */
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+.card-header::after {
+  content: " ";
+  display: block;
+  background: #e7e9eb;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+#info {
+  display: table-row;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  background-color: rgb(161, 197, 90);
+  color: #ffffff;
+
+  text-align: center;
+  display: block;
+  padding: 10px 20px;
+  margin: 9% 80%;
+  border: 1px solid rgb(112, 143, 97);
+  border-radius: 50px;
+  box-shadow: 1px 5px 2px 0px rgba(126, 126, 126, 0.945);
+
+  font-size: 22px;
+  line-height: 22px;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: default;
+  background: #bebebe;
+  border: none;
+  cursor: pointer;
+}
+
+/* .float-right {
+  float: right;
+} */
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 14px;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+    margin: 9% 80%;
+  }
+  label {
+    color: rgb(184, 184, 184);
+    width: 12em;
+    font-size: 12px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    float: left;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 12px;
+    margin: 10px 0px 0px 0px;
+    padding: 8px 12px;
+    margin: 5% 80%;
+  }
+  label {
+    color: rgb(184, 184, 184);
+    width: 12em;
+    font-size: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    float: left;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 11px;
+  }
+}

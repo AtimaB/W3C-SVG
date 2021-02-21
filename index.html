@@ -26,15 +26,15 @@
         <div class="card-body">
         <form id="form">
           <div class="form-group row" id="info">
-            <label class="col-sm-2 col-form-label" maxlength="4">ssn (last 4) xxx-xx-</label>
-              <input type="number" class="required-input" id="last4" placeholder="xxxx" oninput="ssnLength(this);" required >
+            <label class="col-sm-2 col-form-label" >ssn (last 4) xxx-xx-</label>
+              <input type="number" class="required-input" id="last4"   pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;" placeholder="xxxx">
           </div>
           <div class="form-group row">
             <label for="inputPassword" class="col-sm-2 col-form-label">date of birth</label>
               <input type="date" class="form-control" id="inputDate">
           </div>
           <div class="card-footer">
-            <button type="submit" id="submitBtn" class="btn">SUBMIT</button>
+            <button type="submit" id="submitBtn" class="btn" onclick="showAlert()" disabled="disabled">SUBMIT</button>
           </div>
         </form>
         </div>
@@ -44,3 +44,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+

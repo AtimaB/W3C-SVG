@@ -1,9 +1,3 @@
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-
 html,
 body,
 .wrapper {
@@ -100,12 +94,7 @@ button[disabled] {
   cursor: default;
   background: #bebebe;
   border: none;
-  cursor: pointer;
 }
-
-/* .float-right {
-  float: right;
-} */
 
 @media (max-width: 690px) {
   .btn {

@@ -13,7 +13,7 @@ form.addEventListener('input', ()=> {
 
 
 function showAlert() {
-    alert ("Successfully Submitted");
+    alert ("Successfully Submitted!");
   }
 
 
